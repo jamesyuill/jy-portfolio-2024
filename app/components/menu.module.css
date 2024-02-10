@@ -1,0 +1,17 @@
+.background {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.83);
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.navmodal {
+  position: relative;
+  top: 30%;
+  left: 30%;
+  background-color: aquamarine;
+}

@@ -1,0 +1,20 @@
+.herocontainer {
+  display: flex;
+  flex-direction: column;
+
+  width: 100vw;
+  height: 80vh;
+  padding: 2rem;
+}
+
+.h1,
+.h2 {
+  font-size: 2rem;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.h2 {
+  font-size: 1.7rem;
+}
