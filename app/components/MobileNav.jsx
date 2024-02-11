@@ -4,7 +4,7 @@ import { IoMenu, IoClose } from 'react-icons/io5';
 import Menu from './Menu';
 
 export default function MobileNav() {
-  const [isOpen, setIsOpen] = useState();
+  const [isOpen, setIsOpen] = useState(false);
 
   const hamburgerIcon = (
     <IoMenu
@@ -26,7 +26,7 @@ export default function MobileNav() {
     <div>
       {isOpen ? closeIcon : hamburgerIcon}
 
-      {isOpen ? <Menu /> : null}
+      {isOpen ? <Menu setIsOpen={setIsOpen} /> : null}
     </div>
   );
 }

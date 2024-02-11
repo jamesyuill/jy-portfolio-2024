@@ -1,0 +1,9 @@
+.h1 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+
+  border-bottom: 1px solid black;
+
+  margin-bottom: 2rem;
+}

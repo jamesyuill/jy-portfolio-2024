@@ -11,7 +11,49 @@
 
 .navmodal {
   position: relative;
-  top: 30%;
-  left: 30%;
-  background-color: aquamarine;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+  padding: 2rem;
+  background-color: white;
+}
+
+.menubtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 8vw;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+  padding: 1rem 0rem;
+  border-bottom: 1px solid black;
+}
+
+.menubtn:hover {
+  background-color: hotpink;
+}
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-content: center;
+  justify-content: space-between;
+  padding-top: 1rem;
+  margin: 0 auto;
+  width: 80%;
+  font-size: 5vw;
+}
+
+.icon-link:hover {
+  -webkit-filter: invert(100%);
+  border-radius: 5px;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
 }
