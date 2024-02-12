@@ -6,7 +6,8 @@ export default function About() {
     <div className={styles.container}>
       <div className={styles.rowOne}>
         <div>
-          <p className={styles.text}>Hi I'm James</p>
+          <p className={styles.text}>Hi I'm James!</p>
+          <br></br>
           <p className={styles.text}>
             After a successful career as a music producer, working and touring
             with some amazing artists, I'm applying the same creative skills to

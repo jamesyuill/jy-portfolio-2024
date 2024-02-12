@@ -1,0 +1,31 @@
+.article {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0.5rem;
+  border-radius: 3px;
+  box-shadow: 2px 2px 2px black;
+}
+
+.img {
+  width: 50%;
+  border: 2px solid black;
+  border-radius: 3px;
+}
+
+.h1 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.h2 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
