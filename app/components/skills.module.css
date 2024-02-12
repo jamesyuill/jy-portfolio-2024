@@ -1,6 +1,6 @@
 .container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
 }
 
@@ -23,4 +23,15 @@
   font-weight: 300;
   font-style: normal;
   font-size: 1rem;
+}
+
+.li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem;
+}
+
+.img {
+  width: 1.5rem;
 }
