@@ -10,6 +10,7 @@ export default function Projects() {
         title={'Balls Dropping'}
         imgUrl={'balls-dropping-desktop.png'}
         disc={'An Audio Visual App'}
+        endpoint={'balls-dropping'}
       />
       <ProjectCard
         title={'What Carb?'}

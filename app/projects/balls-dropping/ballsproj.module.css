@@ -1,0 +1,31 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  padding: 0rem 2rem;
+}
+
+.projectimage {
+  width: 100%;
+}
+
+.projectcontainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.text {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1rem;
+}
+
+.unordered {
+  list-style: none;
+
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1rem;
+}
