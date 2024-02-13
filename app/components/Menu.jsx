@@ -1,18 +1,22 @@
-import React from 'react';
+'use client';
+import React, { useState } from 'react';
 import styles from './menu.module.css';
 import Link from 'next/link';
 
 import { FaLinkedin, FaInstagram, FaTwitter, FaGithub } from 'react-icons/fa';
 
 export default function Menu({ setIsOpen }) {
+  const [btnClicked, setButtonClicked] = useState(false);
+
   return (
-    <div className={styles.background}>
+    <div className={btnClicked ? styles.backgroundfadeout : styles.background}>
       <div className={styles.navmodal}>
         <Link
           className={styles.link}
           href="/"
           onClick={() => {
-            setTimeout(() => setIsOpen(false), 500);
+            setButtonClicked(true);
+            setTimeout(() => setIsOpen(false), 2000);
           }}
         >
           <div className={styles.menubtn}>HOME</div>
@@ -21,7 +25,8 @@ export default function Menu({ setIsOpen }) {
           className={styles.link}
           href="/about"
           onClick={() => {
-            setTimeout(() => setIsOpen(false), 500);
+            setButtonClicked(true);
+            setTimeout(() => setIsOpen(false), 2000);
           }}
         >
           <div className={styles.menubtn}>ABOUT</div>
@@ -30,7 +35,8 @@ export default function Menu({ setIsOpen }) {
           className={styles.link}
           href="/skills"
           onClick={() => {
-            setTimeout(() => setIsOpen(false), 500);
+            setButtonClicked(true);
+            setTimeout(() => setIsOpen(false), 2000);
           }}
         >
           <div className={styles.menubtn}>SKILLS</div>
@@ -39,7 +45,8 @@ export default function Menu({ setIsOpen }) {
           className={styles.link}
           href="/projects"
           onClick={() => {
-            setTimeout(() => setIsOpen(false), 500);
+            setButtonClicked(true);
+            setTimeout(() => setIsOpen(false), 2000);
           }}
         >
           <div className={styles.menubtn}>PROJECTS</div>
@@ -48,7 +55,8 @@ export default function Menu({ setIsOpen }) {
           className={styles.link}
           href="/playground"
           onClick={() => {
-            setTimeout(() => setIsOpen(false), 500);
+            setButtonClicked(true);
+            setTimeout(() => setIsOpen(false), 2000);
           }}
         >
           <div className={styles.menubtn}>PLAYGROUND</div>
@@ -57,7 +65,8 @@ export default function Menu({ setIsOpen }) {
           className={styles.link}
           href="/contact"
           onClick={() => {
-            setTimeout(() => setIsOpen(false), 500);
+            setButtonClicked(true);
+            setTimeout(() => setIsOpen(false), 2000);
           }}
         >
           <div className={styles.menubtn}>CONTACT</div>

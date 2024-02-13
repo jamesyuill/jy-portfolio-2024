@@ -26,7 +26,7 @@ export default function MobileNav() {
     <div>
       {isOpen ? closeIcon : hamburgerIcon}
 
-      {isOpen ? <Menu setIsOpen={setIsOpen} /> : null}
+      {isOpen && <Menu setIsOpen={setIsOpen} />}
     </div>
   );
 }

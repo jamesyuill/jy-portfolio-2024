@@ -1,18 +1,25 @@
 import React from 'react';
 import PageHeading from '../../components/PageHeading';
-import styles from './wcproj.module.css';
+import styles from './jynproj.module.css';
 
-export default function whatCarb() {
-  const techSkills = ['Javascript', 'React', 'MongoDB', 'Express', 'Node'];
+export default function jyNews() {
+  const techSkills = [
+    'Javascript',
+    'React',
+    'Express.js',
+    'Jest',
+    'PostgreSQL',
+    'Node.js',
+  ];
 
   return (
     <main className={styles.main}>
-      <PageHeading title={'What Carb?'} />
+      <PageHeading title={'JY News'} />
 
       <div id="project-image" className={styles.imageandtech}>
-        <a href="https://what-carb.netlify.app/" target="_blank">
+        <a href="http://jy-news-fullstack-project.netlify.app/" target="_blank">
           <img
-            src="/project-images/what-carb-desktop-and-mobile.png"
+            src="/project-images/jy-news-desktop-and-mobile.png"
             className={styles.projectimage}
           />
         </a>
@@ -24,21 +31,21 @@ export default function whatCarb() {
             {/* githubs etc */}
             <a
               className={styles.plink}
-              href="https://github.com/jamesyuill/what-carb-be"
+              href="https://github.com/jamesyuill/jy-news"
               target="_blank"
             >
               <p>Github (be)</p>
             </a>
             <a
               className={styles.plink}
-              href="https://github.com/jamesyuill/what-carb-react"
+              href="https://github.com/jamesyuill/fe-jy-news"
               target="_blank"
             >
               <p>Github (fe)</p>
             </a>
             <a
               className={styles.plink}
-              href="https://what-carb.netlify.app/"
+              href="https://jy-news-fullstack-project.netlify.app"
               target="_blank"
             >
               <p>Visit Site</p>
@@ -59,22 +66,33 @@ export default function whatCarb() {
       </div>
 
       <div id="project-container" className={styles.projectcontainer}>
-        <p className={styles.subheading}>A MERN Dish Selector App</p>
+        <p className={styles.subheading}>Northcoders Solo Full Stack Project</p>
         <div id="project-info" className={styles.projectinfo}>
           <div id="description">
             <p className={styles.text}>
-              - Here is a reworked version of an old app idea I had.
+              - Successfully built a RESTful API and back end server using
+              Express, SQL and PostGres.
             </p>
             <p className={styles.text}>
-              - You can get a meal suggestion based on the carbohydrate you
-              would like to eat.
+              - It was developed using TDD, using Jest, Jest-Sorted and
+              Supertest.
             </p>
             <p className={styles.text}>
-              - I'm using a MongoDB database to store the dishes. A user can
-              view, update, add and delete a dish.
+              - We utilised Husky to prevent pushing any commits with failing
+              code.
             </p>
             <p className={styles.text}>
-              - To learn more about the app visit the github links below.
+              – Successfully developed a UI that interacts with our Back End
+              Server.
+            </p>
+            <p className={styles.text}>
+              - This was developed in React and used additional libraries
+              React-Router-Dom for the routing and Axios for the API requests.
+            </p>
+            <p className={styles.text}>
+              - The project was mainly focused on functionality, but we were
+              required to keep in mind the application’s responsiveness and
+              accessibility
             </p>
           </div>
         </div>

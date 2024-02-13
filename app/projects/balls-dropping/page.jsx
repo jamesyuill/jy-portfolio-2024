@@ -9,13 +9,47 @@ export default function ballsDropping() {
     <main className={styles.main}>
       <PageHeading title={'Balls Dropping'} />
 
-      <div id="project-image">
+      <div id="project-image" className={styles.imageandtech}>
         <a href="https://balls-dropping.netlify.app/" target="_blank">
           <img
             src="/project-images/balls-dropping-desktop.png"
             className={styles.projectimage}
           />
         </a>
+
+        <div id="project-tech" className={styles.projecttechandlinks}>
+          {/* map over project skills */}
+
+          <div id="project-links" className={styles.projectlinks}>
+            {/* githubs etc */}
+            <a
+              className={styles.plink}
+              href="https://github.com/jamesyuill/bouncing-ball"
+              target="_blank"
+            >
+              Github
+            </a>
+
+            <a
+              className={styles.plink}
+              href="https://balls-dropping.netlify.app/"
+              target="_blank"
+            >
+              Visit Site
+            </a>
+          </div>
+
+          <ul className={styles.unordered}>
+            <p className={styles.textb}>Tech Stack:</p>
+            {techSkills.map((item) => {
+              return (
+                <li key={item}>
+                  <p>{item}</p>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
       </div>
 
       <div id="project-container" className={styles.projectcontainer}>
@@ -40,41 +74,6 @@ export default function ballsDropping() {
             <p className={styles.text}>
               - To learn more about the app visit the github links below.
             </p>
-          </div>
-
-          <div id="project-tech" className={styles.projecttechandlinks}>
-            {/* map over project skills */}
-            <ul className={styles.unordered}>
-              <p className={styles.textb}>Tech Stack:</p>
-              {techSkills.map((item) => {
-                return (
-                  <li key={item}>
-                    <p>{item}</p>
-                  </li>
-                );
-              })}
-            </ul>
-
-            <div id="project-links" className={styles.projectlinks}>
-              {/* githubs etc */}
-              <div className="github-link">
-                <a
-                  className={styles.plink}
-                  href="https://github.com/jamesyuill/bouncing-ball"
-                  target="_blank"
-                >
-                  Github
-                </a>
-
-                <a
-                  className={styles.plink}
-                  href="https://balls-dropping.netlify.app/"
-                  target="_blank"
-                >
-                  Deployed Site
-                </a>
-              </div>
-            </div>
           </div>
         </div>
       </div>

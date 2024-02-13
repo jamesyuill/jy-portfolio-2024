@@ -1,20 +1,57 @@
-.background {
+@keyframes fadein {
+  0% {
+    opacity: 0;
+    transform: translateX(1000px);
+    transition: ease-out;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeout {
+  0% {
+  }
+
+  100% {
+    transform: translateX(1000px);
+    transition: ease-out;
+  }
+}
+
+.backgroundfadeout {
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.83);
+  background-color: rgb(0, 0, 0);
   display: flex;
   position: absolute;
   top: 0;
   left: 0;
   z-index: 2;
+  animation-name: fadeout;
+  animation-duration: 2.5s;
+}
+
+.background {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  animation-name: fadein;
+  animation-duration: 2s;
 }
 
 .navmodal {
   position: relative;
-  top: 10%;
-  left: 10%;
-  width: 80%;
-  height: 80%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   padding: 2rem;
   background-color: white;
 }
@@ -48,9 +85,18 @@
   font-size: 5vw;
 }
 
-.icon-link:hover {
-  -webkit-filter: invert(100%);
-  border-radius: 5px;
+.iconlink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  padding: 0.5rem;
+  border: 1px solid black;
+}
+
+.iconlink:hover {
+  background-color: hotpink;
+  /* -webkit-filter: grayscale(100%); */
 }
 
 .link {

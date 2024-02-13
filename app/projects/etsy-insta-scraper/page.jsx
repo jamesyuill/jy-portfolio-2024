@@ -1,18 +1,28 @@
 import React from 'react';
 import PageHeading from '../../components/PageHeading';
-import styles from './wcproj.module.css';
+import styles from './eisproj.module.css';
 
-export default function whatCarb() {
-  const techSkills = ['Javascript', 'React', 'MongoDB', 'Express', 'Node'];
+export default function etsyInstaScraper() {
+  const techSkills = [
+    'Javascript',
+    'Node.js',
+    'Express.js',
+    'Puppeteer',
+    'Instagram Private API',
+    'Node-Cron',
+  ];
 
   return (
     <main className={styles.main}>
-      <PageHeading title={'What Carb?'} />
+      <PageHeading title={'Etsy Scraper to Instagram Poster'} />
 
       <div id="project-image" className={styles.imageandtech}>
-        <a href="https://what-carb.netlify.app/" target="_blank">
+        <a
+          href="https://www.instagram.com/everything_is_noise/"
+          target="_blank"
+        >
           <img
-            src="/project-images/what-carb-desktop-and-mobile.png"
+            src="/project-images/etsy-insta-scraper-big.png"
             className={styles.projectimage}
           />
         </a>
@@ -24,24 +34,24 @@ export default function whatCarb() {
             {/* githubs etc */}
             <a
               className={styles.plink}
-              href="https://github.com/jamesyuill/what-carb-be"
+              href="https://github.com/jamesyuill/etsy-gram-scraper"
               target="_blank"
             >
-              <p>Github (be)</p>
+              <p>Github</p>
             </a>
             <a
               className={styles.plink}
-              href="https://github.com/jamesyuill/what-carb-react"
+              href="https://www.etsy.com/uk/shop/EverythingIsNoise"
               target="_blank"
             >
-              <p>Github (fe)</p>
+              <p>Etsy Shop</p>
             </a>
             <a
               className={styles.plink}
-              href="https://what-carb.netlify.app/"
+              href="https://www.instagram.com/everything_is_noise/"
               target="_blank"
             >
-              <p>Visit Site</p>
+              <p>Instagram</p>
             </a>
           </div>
 
@@ -59,20 +69,18 @@ export default function whatCarb() {
       </div>
 
       <div id="project-container" className={styles.projectcontainer}>
-        <p className={styles.subheading}>A MERN Dish Selector App</p>
+        <p className={styles.subheading}>An Automation Project</p>
         <div id="project-info" className={styles.projectinfo}>
           <div id="description">
             <p className={styles.text}>
-              - Here is a reworked version of an old app idea I had.
+              - Built with using Puppeteer for the web scraping and
+              Instagram-Private-API for the posting.
             </p>
             <p className={styles.text}>
-              - You can get a meal suggestion based on the carbohydrate you
-              would like to eat.
+              - The aim was to automate the task of regularly posting shop items
+              from a drop shipping site to Instagram.
             </p>
-            <p className={styles.text}>
-              - I'm using a MongoDB database to store the dishes. A user can
-              view, update, add and delete a dish.
-            </p>
+
             <p className={styles.text}>
               - To learn more about the app visit the github links below.
             </p>
