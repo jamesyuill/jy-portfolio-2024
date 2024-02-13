@@ -8,41 +8,57 @@ export default function Menu({ setIsOpen }) {
   return (
     <div className={styles.background}>
       <div className={styles.navmodal}>
-        <Link className={styles.link} href="/" onClick={() => setIsOpen(false)}>
+        <Link
+          className={styles.link}
+          href="/"
+          onClick={() => {
+            setTimeout(() => setIsOpen(false), 500);
+          }}
+        >
           <div className={styles.menubtn}>HOME</div>
         </Link>
         <Link
           className={styles.link}
           href="/about"
-          onClick={() => setIsOpen(false)}
+          onClick={() => {
+            setTimeout(() => setIsOpen(false), 500);
+          }}
         >
           <div className={styles.menubtn}>ABOUT</div>
         </Link>
         <Link
           className={styles.link}
           href="/skills"
-          onClick={() => setIsOpen(false)}
+          onClick={() => {
+            setTimeout(() => setIsOpen(false), 500);
+          }}
         >
           <div className={styles.menubtn}>SKILLS</div>
         </Link>
         <Link
           className={styles.link}
           href="/projects"
-          onClick={() => setIsOpen(false)}
+          onClick={() => {
+            setTimeout(() => setIsOpen(false), 500);
+          }}
         >
           <div className={styles.menubtn}>PROJECTS</div>
         </Link>
         <Link
           className={styles.link}
           href="/playground"
-          onClick={() => setIsOpen(false)}
+          onClick={() => {
+            setTimeout(() => setIsOpen(false), 500);
+          }}
         >
           <div className={styles.menubtn}>PLAYGROUND</div>
         </Link>
         <Link
           className={styles.link}
           href="/contact"
-          onClick={() => setIsOpen(false)}
+          onClick={() => {
+            setTimeout(() => setIsOpen(false), 500);
+          }}
         >
           <div className={styles.menubtn}>CONTACT</div>
         </Link>
