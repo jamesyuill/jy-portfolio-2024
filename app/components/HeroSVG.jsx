@@ -59,6 +59,7 @@ export default function HeroSVG() {
               cx={item.x}
               cy={item.y}
               fill={item.color}
+              fillOpacity={0.8}
             />
           );
         })}
