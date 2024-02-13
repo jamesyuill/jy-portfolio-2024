@@ -1,25 +1,25 @@
 import React from 'react';
 import PageHeading from '../../components/PageHeading';
-import styles from './ballsproj.module.css';
+import styles from './wcproj.module.css';
 
-export default function ballsDropping() {
+export default function whatCarb() {
   const techSkills = ['Javascript', 'Three.js', 'Tone.js'];
 
   return (
     <main className={styles.main}>
-      <PageHeading title={'Balls Dropping'} />
+      <PageHeading title={'What Carb?'} />
 
       <div id="project-image">
         <a href="https://balls-dropping.netlify.app/" target="_blank">
           <img
-            src="/project-images/balls-dropping-desktop.png"
+            src="/project-images/what-carb-desktop-and-mobile.png"
             className={styles.projectimage}
           />
         </a>
       </div>
 
       <div id="project-container" className={styles.projectcontainer}>
-        <p className={styles.subheading}>An Audio Visual App</p>
+        <p className={styles.subheading}>A MERN Dish Selector App</p>
         <div id="project-info" className={styles.projectinfo}>
           <div id="description">
             <p className={styles.text}>

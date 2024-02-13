@@ -16,27 +16,32 @@ export default function Projects() {
         title={'What Carb?'}
         imgUrl={'what-carb-desktop-and-mobile.png'}
         disc={'MERN Dish Selector App'}
+        endpoint={'what-carb'}
       />
       <ProjectCard
         title={'Guess What?!'}
         imgUrl={'guess-what-desktop.png'}
         disc={'Northcoders Final Course Project'}
+        endpoint={'guess-what'}
       />
 
       <ProjectCard
         title={'Etsy Scraper to Instagram Poster'}
         imgUrl={'etsy-insta-scraper-big.png'}
         disc={'An Automation Project'}
+        endpoint={'etsy-insta-scraper'}
       />
       <ProjectCard
         title={'JY News'}
         imgUrl={'jy-news-desktop-and-mobile.png'}
         disc={'Northcoders Solo Full Stack Project'}
+        endpoint={'jy-news'}
       />
       <ProjectCard
         title={'cable tv Website'}
         imgUrl={'cable-tv-website.png'}
         disc={'My Introduction to Three and GSAP'}
+        endpoint={'cable-tv-website'}
       />
     </div>
   );
