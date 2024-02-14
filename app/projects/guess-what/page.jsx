@@ -1,6 +1,6 @@
 import React from 'react';
 import PageHeading from '../../components/PageHeading';
-import styles from './ballsproj.module.css';
+import styles from './gwproj.module.css';
 
 export default function guessWhat() {
   const techSkills = [

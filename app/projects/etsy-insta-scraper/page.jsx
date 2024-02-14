@@ -1,6 +1,6 @@
 import React from 'react';
 import PageHeading from '../../components/PageHeading';
-import styles from './ballsproj.module.css';
+import styles from './eisproj.module.css';
 
 export default function etsyInstaScraper() {
   const techSkills = [
