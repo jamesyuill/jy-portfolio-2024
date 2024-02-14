@@ -71,7 +71,7 @@
 }
 
 .menubtn:hover {
-  background-color: hotpink;
+  background-color: #ff4b91;
 }
 
 .socials {
@@ -96,7 +96,7 @@
 }
 
 .iconlink:hover {
-  background-color: hotpink;
+  background-color: #ff4b91;
   /* -webkit-filter: grayscale(100%); */
 }
 

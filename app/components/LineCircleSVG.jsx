@@ -16,16 +16,7 @@ export default function LineCircleSVG() {
 
   //   const windHeight = window.innerHeight;
   //   const windWidth = window.innerWidth;
-  const potentialColors = [
-    'red',
-    'orange',
-    'yellow',
-    'green',
-    'blue',
-    'indigo',
-    'lime',
-    'hotpink',
-  ];
+  const potentialColors = ['#0802A3', '#FF4B91', '#FF7676', '#FFCD4B'];
 
   let lineArray = [];
   let radius = windowSize.width / 4;
@@ -33,7 +24,7 @@ export default function LineCircleSVG() {
     let randomChoice = Math.floor(Math.random() * potentialColors.length);
     let randomColor = potentialColors[randomChoice];
     let randomWidth = Math.floor(Math.random() * 15);
-    let randomSize = Math.floor(Math.random() * 80);
+    let randomSize = Math.floor(Math.random() * 60);
     let x = radius * Math.cos(angle) + radius * 2;
     let y = radius * Math.sin(angle) + radius * 2;
 

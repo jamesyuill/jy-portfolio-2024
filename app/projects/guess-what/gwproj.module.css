@@ -94,7 +94,7 @@
   font-style: normal;
   font-size: 1.2rem;
   text-decoration: underline;
-  text-decoration-color: hotpink;
+  text-decoration-color: #ff4b91;
   color: black;
 }
 
@@ -102,7 +102,7 @@
   cursor: pointer;
 
   width: fit-content;
-  background-color: hotpink;
+  background-color: #ff4b91;
   border-radius: 3px;
 }
 

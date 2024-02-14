@@ -20,15 +20,7 @@ export default function HeroSVG() {
   const windHeight = window.innerHeight;
   const windWidth = window.innerWidth;
 
-  const potentialColors = [
-    'red',
-    'orange',
-    'yellow',
-    'green',
-    'blue',
-    'indigo',
-    'violet',
-  ];
+  const potentialColors = ['#0802A3', '#FF4B91', '#FF7676', '#FFCD4B'];
 
   let circlesArray = [];
 

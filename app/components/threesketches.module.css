@@ -25,6 +25,10 @@
   border-radius: 3px;
 }
 
+.threelink:hover {
+  transform: scale(1.1);
+}
+
 .image {
   width: 5rem;
   padding: 1px;
@@ -36,6 +40,6 @@
   font-family: 'Quicksand', sans-serif;
   font-weight: 400;
   font-style: normal;
-  text-decoration-color: hotpink;
+  text-decoration-color: #ff4b91;
   color: black;
 }

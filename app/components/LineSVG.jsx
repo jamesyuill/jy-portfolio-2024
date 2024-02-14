@@ -19,21 +19,13 @@ export default function LineSVG() {
 
   const windHeight = window.innerHeight;
   const windWidth = window.innerWidth;
-  const potentialColors = [
-    'red',
-    'orange',
-    'yellow',
-    'green',
-    'blue',
-    'indigo',
-    'violet',
-  ];
+  const potentialColors = ['#0802A3', '#FF4B91', '#FF7676', '#FFCD4B'];
 
   let lineArray = [];
   for (let i = 0; i < windWidth; i += 30) {
     let randomChoice = Math.floor(Math.random() * potentialColors.length);
     let randomColor = potentialColors[randomChoice];
-    let randomWidth = Math.floor(Math.random() * 20);
+    let randomWidth = Math.floor(Math.random() * 30);
     lineArray.push({
       x1: i,
       y1: 0,
@@ -59,6 +51,7 @@ export default function LineSVG() {
               y2={line.y2}
               stroke={line.color}
               strokeWidth={line.width}
+              strokeOpacity={0.8}
             />
           );
         })}

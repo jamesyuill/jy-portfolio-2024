@@ -46,7 +46,7 @@
   font-style: normal;
   animation-name: fade-in;
   animation-duration: 4s;
-  text-shadow: 3px 2px 2px white;
+  text-shadow: 3px 2px 2px rgb(255, 255, 255);
 }
 
 .h2 {
@@ -57,5 +57,5 @@
   animation-name: fade-in-and-up;
   animation-duration: 4s;
 
-  text-shadow: 3px 2px 2px white;
+  text-shadow: 3px 2px 2px rgb(255, 255, 255);
 }

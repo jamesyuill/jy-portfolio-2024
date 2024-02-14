@@ -7,7 +7,7 @@
 
 .h1:hover {
   cursor: pointer;
-  text-shadow: 2px 2px 1px rgba(255, 105, 180, 0.719);
+  text-shadow: 2px 2px 1px #ff4b9077;
 }
 
 .link {

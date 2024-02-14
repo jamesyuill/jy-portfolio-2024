@@ -15,8 +15,12 @@
 }
 
 .image {
-  width: 4rem;
+  width: 5rem;
 
   padding: 1px;
   background-color: black;
+}
+
+.image:hover {
+  transform: scale(1.1);
 }
