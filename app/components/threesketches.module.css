@@ -1,0 +1,41 @@
+.title {
+  font-size: 1.2rem;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  padding: 1rem 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.threelink {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.294);
+  width: 8rem;
+  height: 7rem;
+  border-radius: 3px;
+}
+
+.image {
+  width: 5rem;
+  padding: 1px;
+  background-color: black;
+}
+
+.name {
+  font-size: 0.8rem;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration-color: hotpink;
+  color: black;
+}

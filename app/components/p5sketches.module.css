@@ -1,0 +1,22 @@
+.title {
+  font-size: 1.2rem;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  padding-bottom: 1rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.image {
+  width: 4rem;
+
+  padding: 1px;
+  background-color: black;
+}

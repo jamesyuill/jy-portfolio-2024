@@ -17,6 +17,7 @@
   100% {
     transform: translateX(1000px);
     transition: ease-out;
+    display: none;
   }
 }
 
