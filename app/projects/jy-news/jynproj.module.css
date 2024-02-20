@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   padding: 0rem 2rem;
-  height: 100vh;
+  height: 110vh;
 }
 
 .projectcontainer {
@@ -99,6 +99,27 @@
 }
 
 .plink:hover {
+  cursor: pointer;
+
+  width: fit-content;
+  background-color: #ff4b91;
+  border-radius: 3px;
+}
+
+.backbtn {
+  display: flex;
+  align-items: center;
+
+  margin-top: 1rem;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: black;
+}
+
+.backbtn:hover {
   cursor: pointer;
 
   width: fit-content;

@@ -1,6 +1,8 @@
 import React from 'react';
 import PageHeading from '../../components/PageHeading';
 import styles from './eisproj.module.css';
+import Link from 'next/link';
+import { RxArrowLeft } from 'react-icons/rx';
 
 export default function etsyInstaScraper() {
   const techSkills = [
@@ -91,6 +93,10 @@ export default function etsyInstaScraper() {
           </div>
         </div>
       </div>
+      <Link href="/projects" className={styles.backbtn}>
+        <RxArrowLeft />
+        Back to Projects
+      </Link>
     </main>
   );
 }

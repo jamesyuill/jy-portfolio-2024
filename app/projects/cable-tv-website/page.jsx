@@ -1,6 +1,8 @@
 import React from 'react';
 import PageHeading from '../../components/PageHeading';
 import styles from './ctvwproj.module.css';
+import Link from 'next/link';
+import { RxArrowLeft } from 'react-icons/rx';
 
 export default function cabletvWebsite() {
   const techSkills = ['Javascript', 'Three.js', 'GSAP'];
@@ -69,6 +71,10 @@ export default function cabletvWebsite() {
           </div>
         </div>
       </div>
+      <Link href="/projects" className={styles.backbtn}>
+        <RxArrowLeft />
+        Back to Projects
+      </Link>
     </main>
   );
 }

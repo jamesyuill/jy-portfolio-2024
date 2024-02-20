@@ -1,6 +1,8 @@
 import React from 'react';
 import PageHeading from '../../components/PageHeading';
 import styles from './wcproj.module.css';
+import Link from 'next/link';
+import { RxArrowLeft } from 'react-icons/rx';
 
 export default function whatCarb() {
   const techSkills = ['Javascript', 'React', 'MongoDB', 'Express', 'Node'];
@@ -84,6 +86,10 @@ export default function whatCarb() {
           </div>
         </div>
       </div>
+      <Link href="/projects" className={styles.backbtn}>
+        <RxArrowLeft />
+        Back to Projects
+      </Link>
     </main>
   );
 }

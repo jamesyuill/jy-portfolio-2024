@@ -16,3 +16,7 @@
   animation-fill-mode: both;
   animation-timing-function: ease-in-out;
 }
+
+.lineItem:hover {
+  transform: scaleY(150%);
+}

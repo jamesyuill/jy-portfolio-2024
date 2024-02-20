@@ -1,6 +1,8 @@
 import React from 'react';
 import PageHeading from '../../components/PageHeading';
 import styles from './jynproj.module.css';
+import Link from 'next/link';
+import { RxArrowLeft } from 'react-icons/rx';
 
 export default function jyNews() {
   const techSkills = [
@@ -107,6 +109,11 @@ export default function jyNews() {
           </div>
         </div>
       </div>
+
+      <Link href="/projects" className={styles.backbtn}>
+        <RxArrowLeft />
+        Back to Projects
+      </Link>
     </main>
   );
 }
