@@ -18,6 +18,7 @@
 .article:hover {
   cursor: pointer;
   box-shadow: 0px 10px 15px rgba(255, 105, 180, 0.719);
+  background-color: #ff4b9046;
 }
 
 .img {

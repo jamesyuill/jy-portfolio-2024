@@ -49,6 +49,11 @@
   text-shadow: 3px 2px 2px rgb(255, 255, 255);
 }
 
+.h1:hover {
+  color: hotpink;
+  text-shadow: 3px 2px 2px rgb(0, 0, 0);
+}
+
 .h2 {
   font-size: 2rem;
   font-family: 'Quicksand', sans-serif;
@@ -58,4 +63,9 @@
   animation-duration: 4s;
 
   text-shadow: 3px 2px 2px rgb(255, 255, 255);
+}
+
+.h2:hover {
+  color: hotpink;
+  text-shadow: 3px 2px 2px rgb(0, 0, 0);
 }
