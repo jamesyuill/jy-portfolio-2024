@@ -1,7 +1,7 @@
 @keyframes fadein {
   0% {
     opacity: 0;
-    transform: translateX(1000px);
+
     transition: ease-out;
   }
 
@@ -15,7 +15,6 @@
   }
 
   100% {
-    transform: translateX(1000px);
     transition: ease-out;
     opacity: 0;
     display: none;

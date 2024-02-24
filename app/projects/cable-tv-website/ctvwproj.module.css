@@ -130,6 +130,9 @@
 }
 
 @media only screen and (min-width: 635px) {
+  .main {
+    height: 130vh;
+  }
   .projectcontainer {
     display: grid;
     grid-template-columns: 1fr 1fr 20%;
