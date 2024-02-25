@@ -3,6 +3,7 @@ import PageHeading from '../../components/PageHeading';
 import styles from './jynproj.module.css';
 import Link from 'next/link';
 import { RxArrowLeft } from 'react-icons/rx';
+import FullPageFade from '@/app/components/FullPageFade';
 
 export default function jyNews() {
   const techSkills = [
@@ -17,6 +18,7 @@ export default function jyNews() {
   return (
     <main className={styles.main}>
       <PageHeading title={'JY News'} />
+      <FullPageFade />
 
       <div className={styles.projectcontainer}>
         {/* image div */}

@@ -3,6 +3,7 @@ import PageHeading from '../../components/PageHeading';
 import styles from './ctvwproj.module.css';
 import Link from 'next/link';
 import { RxArrowLeft } from 'react-icons/rx';
+import FullPageFade from '@/app/components/FullPageFade';
 
 export default function cabletvWebsite() {
   const techSkills = ['Javascript', 'Three.js', 'GSAP'];
@@ -10,6 +11,7 @@ export default function cabletvWebsite() {
   return (
     <main className={styles.main}>
       <PageHeading title={'cable tv Website'} />
+      <FullPageFade />
 
       <div className={styles.projectcontainer}>
         {/* image div */}

@@ -3,6 +3,7 @@ import PageHeading from '../../components/PageHeading';
 import styles from './eisproj.module.css';
 import Link from 'next/link';
 import { RxArrowLeft } from 'react-icons/rx';
+import FullPageFade from '@/app/components/FullPageFade';
 
 export default function etsyInstaScraper() {
   const techSkills = [
@@ -17,6 +18,7 @@ export default function etsyInstaScraper() {
   return (
     <main className={styles.main}>
       <PageHeading title={'Etsy Scraper to Instagram Poster'} />
+      <FullPageFade />
 
       <div className={styles.projectcontainer}>
         {/* image div */}
