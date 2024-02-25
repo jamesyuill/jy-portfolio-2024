@@ -3,6 +3,7 @@ import PageHeading from '../../components/PageHeading';
 import styles from './ballsproj.module.css';
 import Link from 'next/link';
 import { RxArrowLeft } from 'react-icons/rx';
+import FullPageFade from '@/app/components/FullPageFade';
 
 export default function ballsDropping() {
   const techSkills = ['Javascript', 'Three.js', 'Tone.js'];
@@ -10,6 +11,7 @@ export default function ballsDropping() {
   return (
     <main className={styles.main}>
       <PageHeading title={'Balls Dropping'} />
+      <FullPageFade />
 
       <div className={styles.projectcontainer}>
         {/* image div */}

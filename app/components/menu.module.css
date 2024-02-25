@@ -2,7 +2,7 @@
   0% {
     opacity: 0;
 
-    transition: ease-out;
+    transition: ease-in;
   }
 
   100% {
@@ -15,7 +15,7 @@
   }
 
   100% {
-    transition: ease-out;
+    transition: ease-in;
     opacity: 0;
     display: none;
   }
@@ -44,7 +44,7 @@
   left: 0;
   z-index: 2;
   animation-name: fadein;
-  animation-duration: 2s;
+  animation-duration: 1s;
 }
 
 .navmodal {

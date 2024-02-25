@@ -1,12 +1,11 @@
-import React from 'react';
 import styles from './hero.module.css';
 import HeroSVG from './HeroSVG';
 import LineSVG from './LineSVG';
 import dynamic from 'next/dynamic';
-
 {
   /* importing this dynamically as the random values cause it to error in the console*/
 }
+
 const LineCircleSVG = dynamic(() => import('./LineCircleSVG'), { ssr: false });
 
 export default function Hero() {

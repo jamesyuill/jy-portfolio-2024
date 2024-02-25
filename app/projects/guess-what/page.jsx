@@ -3,6 +3,7 @@ import PageHeading from '../../components/PageHeading';
 import styles from './gwproj.module.css';
 import Link from 'next/link';
 import { RxArrowLeft } from 'react-icons/rx';
+import FullPageFade from '@/app/components/FullPageFade';
 
 export default function guessWhat() {
   const techSkills = [
@@ -18,6 +19,7 @@ export default function guessWhat() {
   return (
     <main className={styles.main}>
       <PageHeading title={'Guess What?!'} />
+      <FullPageFade />
 
       <div className={styles.projectcontainer}>
         {/* image div */}

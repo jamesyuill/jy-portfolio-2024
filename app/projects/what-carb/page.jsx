@@ -3,6 +3,7 @@ import PageHeading from '../../components/PageHeading';
 import styles from './wcproj.module.css';
 import Link from 'next/link';
 import { RxArrowLeft } from 'react-icons/rx';
+import FullPageFade from '@/app/components/FullPageFade';
 
 export default function whatCarb() {
   const techSkills = ['Javascript', 'React', 'MongoDB', 'Express', 'Node'];
@@ -10,6 +11,7 @@ export default function whatCarb() {
   return (
     <main className={styles.main}>
       <PageHeading title={'What Carb?'} />
+      <FullPageFade />
 
       <div className={styles.projectcontainer}>
         {/* image div */}
