@@ -1,3 +1,4 @@
+import CircleInter from './CircleInter';
 import styles from './hero.module.css';
 import HeroSVG from './HeroSVG';
 import LineSVG from './LineSVG';
@@ -13,6 +14,7 @@ export default function Hero() {
     0: <HeroSVG />,
     1: <LineSVG />,
     2: <LineCircleSVG />,
+    3: <CircleInter />,
   };
 
   return (
@@ -22,7 +24,8 @@ export default function Hero() {
         <h2 className={styles.h2}>SOFTWARE ENGINEER</h2>
       </div>
       <div className={styles.svgbackground}>
-        {animationLookup[Math.floor(Math.random() * 3)]}
+        {/* {animationLookup[Math.floor(Math.random() * 3)]} */}
+        {animationLookup[3]}
       </div>
     </div>
   );
