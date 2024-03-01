@@ -18,16 +18,9 @@ export default function CircleInter() {
       width: window.innerWidth,
       height: window.innerHeight,
     });
-
-    // gsap.set('.ball', { xPercent: -50, yPercent: -50 });
-    // let targets = gsap.utils.toArray('.ball');
-
-    // -------- create the ball grid ----------
   }, []);
 
   useGSAP(() => {
-    // document.getElementById('ball').addEventListener('mouseenter', animate);
-    // document.getElementById('ball').addEventListener('mouseleave', animateOut);
     const balls = gsap.utils.toArray('#ball');
 
     balls.forEach((ball) => {
@@ -35,9 +28,7 @@ export default function CircleInter() {
         duration: 1,
         x: gsap.utils.random(-20, 20),
         y: gsap.utils.random(-20, 20),
-        ease: 'power1.out',
-        // overwrite: 'auto',
-        // stagger: 0.02,
+        ease: 'easeOut',
       });
 
       balls.forEach((ball) => {
@@ -47,21 +38,19 @@ export default function CircleInter() {
             x: gsap.utils.random(-20, 20),
             y: gsap.utils.random(-20, 20),
             r: 60,
-            ease: 'power1.out',
-
-            // overwrite: 'auto',
-            // stagger: 0.02,
+            fillOpacity: 1,
+            ease: 'easeOut',
           });
         });
+
         ball.addEventListener('mouseleave', (e) => {
           gsap.to(e.target, {
             duration: 1,
             x: gsap.utils.random(-20, 20),
             y: gsap.utils.random(-20, 20),
             r: 40,
-            ease: 'power1.out',
-            // overwrite: 'auto',
-            // stagger: 0.02,
+            fillOpacity: 0.9,
+            ease: 'easeOut',
           });
         });
       });
@@ -95,6 +84,7 @@ export default function CircleInter() {
               cx={item.x}
               cy={item.y}
               fill={item.color}
+              fillOpacity={0.9}
             ></circle>
           );
         })}
