@@ -1,12 +1,11 @@
 @keyframes fadein {
   0% {
-    opacity: 0;
-
-    transition: ease-in;
+    transform: translateY(-800px);
+    transition: ease-out;
   }
 
   100% {
-    opacity: 1;
+    display: flex;
   }
 }
 
@@ -15,8 +14,9 @@
   }
 
   100% {
-    transition: ease-in;
-    opacity: 0;
+    transition: ease-out;
+    transform: translateY(-800px);
+
     display: none;
   }
 }
@@ -31,7 +31,7 @@
   left: 0;
   z-index: 2;
   animation-name: fadeout;
-  animation-duration: 2.5s;
+  animation-duration: 1s;
 }
 
 .background {
@@ -44,7 +44,7 @@
   left: 0;
   z-index: 2;
   animation-name: fadein;
-  animation-duration: 1s;
+  animation-duration: 0.5s;
 }
 
 .navmodal {

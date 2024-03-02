@@ -16,7 +16,7 @@ export default function Menu({ setIsOpen }) {
           href="/"
           onClick={() => {
             setButtonClicked(true);
-            setTimeout(() => setIsOpen(false), 2000);
+            setTimeout(() => setIsOpen(false), 1000);
           }}
         >
           <div className={styles.menubtn}>HOME</div>
@@ -26,7 +26,7 @@ export default function Menu({ setIsOpen }) {
           href="/about"
           onClick={() => {
             setButtonClicked(true);
-            setTimeout(() => setIsOpen(false), 2000);
+            setTimeout(() => setIsOpen(false), 1000);
           }}
         >
           <div className={styles.menubtn}>ABOUT</div>
@@ -36,7 +36,7 @@ export default function Menu({ setIsOpen }) {
           href="/skills"
           onClick={() => {
             setButtonClicked(true);
-            setTimeout(() => setIsOpen(false), 2000);
+            setTimeout(() => setIsOpen(false), 1000);
           }}
         >
           <div className={styles.menubtn}>SKILLS</div>
@@ -46,7 +46,7 @@ export default function Menu({ setIsOpen }) {
           href="/projects"
           onClick={() => {
             setButtonClicked(true);
-            setTimeout(() => setIsOpen(false), 2000);
+            setTimeout(() => setIsOpen(false), 1000);
           }}
         >
           <div className={styles.menubtn}>PROJECTS</div>
@@ -56,7 +56,7 @@ export default function Menu({ setIsOpen }) {
           href="/playground"
           onClick={() => {
             setButtonClicked(true);
-            setTimeout(() => setIsOpen(false), 2000);
+            setTimeout(() => setIsOpen(false), 1000);
           }}
         >
           <div className={styles.menubtn}>PLAYGROUND</div>
@@ -66,7 +66,7 @@ export default function Menu({ setIsOpen }) {
           href="/contact"
           onClick={() => {
             setButtonClicked(true);
-            setTimeout(() => setIsOpen(false), 2000);
+            setTimeout(() => setIsOpen(false), 1000);
           }}
         >
           <div className={styles.menubtn}>CONTACT</div>
