@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { IoMenu, IoClose } from 'react-icons/io5';
 import Menu from './Menu';
+import styles from './mobilenav.module.css';
 
 export default function MobileNav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,7 +24,7 @@ export default function MobileNav() {
   );
 
   return (
-    <div>
+    <div className={styles.squareoutline}>
       {isOpen ? closeIcon : hamburgerIcon}
 
       {isOpen && <Menu setIsOpen={setIsOpen} />}

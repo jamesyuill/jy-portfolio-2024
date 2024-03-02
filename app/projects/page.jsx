@@ -9,6 +9,7 @@ export default function projects() {
     <main className={styles.main}>
       <PageHeading title={'PROJECTS'} />
       <FullPageFade />
+
       <Projects />
     </main>
   );

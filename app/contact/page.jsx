@@ -9,6 +9,7 @@ export default function contact() {
     <main className={styles.main}>
       <PageHeading title={'CONTACT'} />
       <FullPageFade />
+
       <Contact />
     </main>
   );

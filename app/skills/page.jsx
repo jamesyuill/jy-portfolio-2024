@@ -9,6 +9,7 @@ export default function skills() {
     <main className={styles.main}>
       <PageHeading title={'SKILLS'} />
       <FullPageFade />
+
       <Skills />
     </main>
   );

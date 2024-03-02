@@ -1,9 +1,16 @@
+.squareoutline {
+  border: 4px solid black;
+  border-radius: 3px;
+  background-color: white;
+}
+
 .h1 {
   font-family: 'Quicksand', sans-serif;
   font-weight: 700;
   font-style: normal;
   color: black;
-  font-size: 2.5rem;
+  font-size: 2.7rem;
+  padding: 1rem;
 }
 
 .h1:hover {
