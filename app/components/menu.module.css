@@ -1,7 +1,7 @@
 @keyframes fadein {
   0% {
     transform: translateY(-800px);
-    transition: ease-out;
+    transition: ease-in-out;
   }
 
   100% {
@@ -14,9 +14,8 @@
   }
 
   100% {
-    transition: ease-out;
+    transition: ease-in-out;
     transform: translateY(-800px);
-
     display: none;
   }
 }

@@ -1,4 +1,5 @@
 import CircleInter from './CircleInter';
+import SquareInter from './SquareInter';
 import styles from './hero.module.css';
 import HeroSVG from './HeroSVG';
 import LineSVG from './LineSVG';
@@ -15,6 +16,7 @@ export default function Hero() {
     1: <LineSVG />,
     2: <LineCircleSVG />,
     3: <CircleInter />,
+    4: <SquareInter />,
   };
 
   return (
@@ -25,7 +27,7 @@ export default function Hero() {
       </div>
       <div className={styles.svgbackground}>
         {/* {animationLookup[Math.floor(Math.random() * 3)]} */}
-        {animationLookup[3]}
+        {animationLookup[4]}
       </div>
     </div>
   );
