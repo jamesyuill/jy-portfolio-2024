@@ -35,10 +35,10 @@ export default function CircleInter() {
         square.addEventListener('mouseenter', (e) => {
           gsap.to(e.target, {
             duration: 1,
-            x: gsap.utils.random(-20, 20),
-            y: gsap.utils.random(-20, 20),
-            width: 60,
-            height: 60,
+            x: gsap.utils.random(-40, 40),
+            y: gsap.utils.random(-40, 40),
+            width: 80,
+            height: 80,
             fillOpacity: 1,
             ease: 'easeOut',
           });
@@ -49,8 +49,8 @@ export default function CircleInter() {
             duration: 1,
             x: gsap.utils.random(-20, 20),
             y: gsap.utils.random(-20, 20),
-            width: 40,
-            height: 40,
+            width: 60,
+            height: 60,
             fillOpacity: 0.9,
             ease: 'easeOut',
           });
@@ -68,8 +68,8 @@ export default function CircleInter() {
         squareArray.push({
           x: x,
           y: y,
-          width: 40,
-          height: 40,
+          width: 60,
+          height: 60,
           color: randomColor,
         });
       }

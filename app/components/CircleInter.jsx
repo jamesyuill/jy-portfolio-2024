@@ -35,8 +35,8 @@ export default function CircleInter() {
         ball.addEventListener('mouseenter', (e) => {
           gsap.to(e.target, {
             duration: 1,
-            x: gsap.utils.random(-20, 20),
-            y: gsap.utils.random(-20, 20),
+            x: gsap.utils.random(-40, 40),
+            y: gsap.utils.random(-40, 40),
             r: 60,
             fillOpacity: 1,
             ease: 'easeOut',
