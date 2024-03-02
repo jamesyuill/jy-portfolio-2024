@@ -5,7 +5,7 @@ export default function Skills() {
   return (
     <div className={styles.container}>
       <div>
-        <h3 className={styles.subheading}>LANGUAGES, PROGRAMS & SOFTWARES</h3>
+        <h3 className={styles.subheading}>LANGUAGES</h3>
       </div>
       <div>
         <ul className={styles.unordered}>
@@ -21,6 +21,11 @@ export default function Skills() {
             <img className={styles.img} src="/images/python.png" />
             PYTHON (currently learning)
           </li>
+        </ul>
+        <div>
+          <h3 className={styles.subheading}>FRAMEWORKS AND LIBRARIES</h3>
+        </div>
+        <ul className={styles.unordered}>
           <li className={styles.li}>
             <img className={styles.img} src="/images/react.png" />
             REACT
@@ -69,6 +74,11 @@ export default function Skills() {
             <img className={styles.img} src="/images/jest.png" />
             JEST
           </li>
+        </ul>
+        <div>
+          <h3 className={styles.subheading}>SOFTWARE</h3>
+        </div>
+        <ul className={styles.unordered}>
           <li className={styles.li}>
             <img className={styles.img} src="/images/touchdesigner.png" />
             TOUCHDESIGNER
