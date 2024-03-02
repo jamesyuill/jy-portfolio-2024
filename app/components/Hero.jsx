@@ -11,10 +11,10 @@ import dynamic from 'next/dynamic';
 // const LineCircleSVG = dynamic(() => import('./LineCircleSVG'), { ssr: false });
 
 export default function Hero() {
-  const animationLookup = {
-    0: <CircleInter />,
-    1: <SquareInter />,
-  };
+  // const animationLookup = {
+  //   0: <CircleInter />,
+  //   1: <SquareInter />,
+  // };
 
   return (
     <div className={styles.herocontainer}>
@@ -23,7 +23,8 @@ export default function Hero() {
         <h2 className={styles.h2}>SOFTWARE ENGINEER</h2>
       </div>
       <div className={styles.svgbackground}>
-        {animationLookup[Math.floor(Math.random() * 2)]}
+        {/* {animationLookup[Math.floor(Math.random() * 2)]} */}
+        {/* {animationLookup[0]} */}
       </div>
     </div>
   );

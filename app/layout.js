@@ -1,5 +1,7 @@
 import './globals.css';
 import Header from './components/Header';
+import CircleInter from './components/CircleInter';
+import SquareInter from './components/SquareInter';
 
 export const metadata = {
   title: 'James Yuill | Software Engineer',
@@ -7,9 +9,14 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  const animationLookup = {
+    0: <CircleInter />,
+    1: <SquareInter />,
+  };
   return (
     <html lang="en">
       <body>
+        {animationLookup[0]}
         <Header />
         {children}
       </body>
