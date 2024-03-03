@@ -27,7 +27,7 @@ export default function MobileNav() {
     <div className={styles.squareoutline}>
       {isOpen ? closeIcon : hamburgerIcon}
 
-      {isOpen && <Menu setIsOpen={setIsOpen} />}
+      {isOpen && <Menu isOpen={isOpen} setIsOpen={setIsOpen} />}
     </div>
   );
 }
