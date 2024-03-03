@@ -1,7 +1,7 @@
 @keyframes fadein {
   0% {
-    transform: translateY(-800px);
-    transition: ease-in-out;
+    top: -800px;
+    transition: ease-in;
   }
 
   100% {
@@ -44,7 +44,7 @@
   left: 0;
   z-index: 2;
   animation-name: fadein;
-  animation-duration: 0.5s;
+  animation-duration: 1s;
 }
 
 .navmodal {
@@ -65,7 +65,6 @@
   font-family: 'Quicksand', sans-serif;
   font-weight: 400;
   font-style: normal;
-
   padding: 1rem 0rem;
 }
 
@@ -102,4 +101,8 @@
 .link {
   text-decoration: none;
   color: black;
+}
+
+.link:hover {
+  background-color: #ff4b91;
 }

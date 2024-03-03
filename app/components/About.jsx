@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './about.module.css';
+import Image from 'next/image';
 
 export default function About() {
   return (
@@ -14,10 +15,18 @@ export default function About() {
             software engineering.
           </p>
         </div>
-        <img
-          className={styles.img}
-          src="./images/jy-profile-image.jpg"
+
+        <Image
+          src="/images/jy-profile-image.jpg"
           alt="James in the studio messing with synths"
+          style={{
+            width: '75%',
+            height: 'auto',
+            borderRadius: '3px',
+            margin: '0 auto',
+          }}
+          width={600}
+          height={500}
         />
         <div className={styles.rowTwo}>
           <p className={styles.text}>

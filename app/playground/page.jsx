@@ -13,7 +13,6 @@ export default function playground() {
 
       <P5Sketches />
       <ThreeSketches />
-      {/* <RandomSketches /> */}
     </main>
   );
 }
