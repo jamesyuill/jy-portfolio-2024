@@ -13,7 +13,8 @@ export default function BackgroundSVG({ path }) {
   };
   return (
     <div className={styles.backgrounddiv}>
-      {path === 'home' ? animationLookup[0] : null}
+      {/* {path === 'home' ? animationLookup[0] : null} */}
+      {animationLookup[Math.floor(Math.random() * 2)]}
     </div>
   );
 }

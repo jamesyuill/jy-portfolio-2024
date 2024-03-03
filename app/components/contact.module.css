@@ -1,12 +1,14 @@
 .formwrapper {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
 
+  gap: 1rem;
+  padding-left: 1rem;
   font-family: 'Quicksand', sans-serif;
   font-weight: 500;
   font-style: normal;
   font-size: 1.2rem;
+  width: 95%;
 }
 
 .input {
@@ -14,6 +16,7 @@
   font-weight: 400;
   font-style: normal;
   font-size: 1.3rem;
+  width: 100%;
 }
 
 .input:focus {

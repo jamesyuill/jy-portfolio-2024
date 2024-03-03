@@ -9,7 +9,7 @@ export default function MobileNav() {
 
   const hamburgerIcon = (
     <IoMenu
-      size={50}
+      size={40}
       className="hamburger"
       onClick={() => setIsOpen(!isOpen)}
     />
@@ -17,7 +17,7 @@ export default function MobileNav() {
 
   const closeIcon = (
     <IoClose
-      size={50}
+      size={40}
       className="hamburger"
       onClick={() => setIsOpen(!isOpen)}
     />
