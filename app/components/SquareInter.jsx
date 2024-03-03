@@ -62,7 +62,7 @@ export default function CircleInter() {
   if (window.innerWidth) {
     squareArray = [];
     for (let y = 0; y < windowSize.height; y += 60) {
-      for (let x = 0; x < windowSize.width; x += 60) {
+      for (let x = 0; x < windowSize.width + 20; x += 60) {
         let randomChoice = Math.floor(Math.random() * potentialColors.length);
         let randomColor = potentialColors[randomChoice];
         squareArray.push({
