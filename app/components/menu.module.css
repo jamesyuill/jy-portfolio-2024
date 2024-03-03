@@ -10,18 +10,18 @@
 }
 
 @keyframes fadeout {
-  0% {
+  from {
   }
 
-  100% {
+  to {
     transition: ease-in-out;
-    transform: translateY(-800px);
+    top: -800px;
     display: none;
   }
 }
 
 .backgroundfadeout {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background-color: rgb(0, 0, 0);
   display: flex;
@@ -30,11 +30,11 @@
   left: 0;
   z-index: 2;
   animation-name: fadeout;
-  animation-duration: 1s;
+  animation-duration: 2s;
 }
 
 .background {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background-color: rgb(0, 0, 0);
   display: flex;

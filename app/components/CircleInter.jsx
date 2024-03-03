@@ -20,6 +20,21 @@ export default function CircleInter() {
     });
   }, []);
 
+  if (window.innerWidth) {
+    ballArray = [];
+    for (let y = 0; y < windowSize.height; y += 60) {
+      for (let x = 0; x < windowSize.width; x += 60) {
+        let randomChoice = Math.floor(Math.random() * potentialColors.length);
+        let randomColor = potentialColors[randomChoice];
+        ballArray.push({
+          x: x,
+          y: y,
+          color: randomColor,
+        });
+      }
+    }
+  }
+
   useGSAP(() => {
     const balls = gsap.utils.toArray('#ball');
 
@@ -56,21 +71,6 @@ export default function CircleInter() {
       });
     });
   }, [windowSize]);
-
-  if (window.innerWidth) {
-    ballArray = [];
-    for (let y = 0; y < windowSize.height; y += 60) {
-      for (let x = 0; x < windowSize.width; x += 60) {
-        let randomChoice = Math.floor(Math.random() * potentialColors.length);
-        let randomColor = potentialColors[randomChoice];
-        ballArray.push({
-          x: x,
-          y: y,
-          color: randomColor,
-        });
-      }
-    }
-  }
 
   return (
     <div>
