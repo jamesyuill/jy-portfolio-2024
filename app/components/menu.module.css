@@ -11,20 +11,21 @@
 
 @keyframes fadeout {
   from {
+    display: flex;
   }
 
   to {
-    transition: ease-in-out;
+    transition: ease-in;
     top: -800px;
     display: none;
   }
 }
 
 .backgroundfadeout {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   background-color: rgb(0, 0, 0);
-  display: flex;
+  display: none;
   position: absolute;
   top: 0;
   left: 0;
@@ -34,7 +35,7 @@
 }
 
 .background {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   background-color: rgb(0, 0, 0);
   display: flex;
@@ -47,7 +48,7 @@
 }
 
 .navmodal {
-  position: relative;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;

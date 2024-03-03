@@ -18,7 +18,7 @@ export default function Menu({ isOpen, setIsOpen }) {
             setButtonClicked(true);
             setTimeout(() => {
               setIsOpen(false);
-            }, 2000);
+            }, 1500);
           }}
         >
           <div className={styles.menubtn}>HOME</div>
@@ -30,7 +30,7 @@ export default function Menu({ isOpen, setIsOpen }) {
             setButtonClicked(true);
             setTimeout(() => {
               setIsOpen(false);
-            }, 2000);
+            }, 1500);
           }}
         >
           <div className={styles.menubtn}>ABOUT</div>
@@ -42,7 +42,7 @@ export default function Menu({ isOpen, setIsOpen }) {
             setButtonClicked(true);
             setTimeout(() => {
               setIsOpen(false);
-            }, 2000);
+            }, 1500);
           }}
         >
           <div className={styles.menubtn}>SKILLS</div>
@@ -54,7 +54,7 @@ export default function Menu({ isOpen, setIsOpen }) {
             setButtonClicked(true);
             setTimeout(() => {
               setIsOpen(false);
-            }, 2000);
+            }, 1500);
           }}
         >
           <div className={styles.menubtn}>PROJECTS</div>
@@ -66,7 +66,7 @@ export default function Menu({ isOpen, setIsOpen }) {
             setButtonClicked(true);
             setTimeout(() => {
               setIsOpen(false);
-            }, 2000);
+            }, 1500);
           }}
         >
           <div className={styles.menubtn}>PLAYGROUND</div>
@@ -78,7 +78,7 @@ export default function Menu({ isOpen, setIsOpen }) {
             setButtonClicked(true);
             setTimeout(() => {
               setIsOpen(false);
-            }, 2000);
+            }, 1500);
           }}
         >
           <div className={styles.menubtn}>CONTACT</div>

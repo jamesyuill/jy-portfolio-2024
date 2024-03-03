@@ -3,7 +3,4 @@
   flex-direction: row;
   justify-content: space-between;
   padding: 2rem;
-  position: relative;
-
-  z-index: 1;
 }

@@ -9,7 +9,7 @@ export default function MobileNav() {
 
   const hamburgerIcon = (
     <IoMenu
-      size={40}
+      size={30}
       className="hamburger"
       onClick={() => setIsOpen(!isOpen)}
     />
@@ -17,17 +17,18 @@ export default function MobileNav() {
 
   const closeIcon = (
     <IoClose
-      size={40}
+      size={30}
       className="hamburger"
       onClick={() => setIsOpen(!isOpen)}
     />
   );
 
   return (
-    <div className={styles.squareoutline}>
-      {isOpen ? closeIcon : hamburgerIcon}
-
-      {isOpen && <Menu isOpen={isOpen} setIsOpen={setIsOpen} />}
-    </div>
+    <>
+      <div className={styles.squareoutline}>
+        {isOpen ? closeIcon : hamburgerIcon}
+      </div>
+      <div>{isOpen && <Menu isOpen={isOpen} setIsOpen={setIsOpen} />}</div>
+    </>
   );
 }
