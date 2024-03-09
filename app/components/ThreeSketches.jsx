@@ -34,7 +34,11 @@ export default function ThreeSketches() {
       <div id="container" className={styles.container}>
         {sketches.map((item) => {
           return (
-            <Link href={item.img_url} className={styles.threelink}>
+            <Link
+              key={item.name}
+              href={item.img_url}
+              className={styles.threelink}
+            >
               <img className={styles.image} src={item.img_src} />
               <p className={styles.name}>{item.name}</p>
             </Link>

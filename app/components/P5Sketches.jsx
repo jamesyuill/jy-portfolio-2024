@@ -74,7 +74,7 @@ export default function P5Sketches() {
       <div id="container" className={styles.container}>
         {sketches.map((item) => {
           return (
-            <Link href={item.img_url}>
+            <Link key={item.img_src} href={item.img_url}>
               <img className={styles.image} src={item.img_src} />
             </Link>
           );

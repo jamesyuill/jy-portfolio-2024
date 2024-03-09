@@ -7,6 +7,10 @@
   z-index: 1;
 }
 
+.squareoutline:hover {
+  background-color: #ff4b9077;
+}
+
 .h1 {
   font-family: 'Quicksand', sans-serif;
   font-weight: 600;
@@ -18,7 +22,6 @@
 
 .h1:hover {
   cursor: pointer;
-  text-shadow: 2px 2px 1px #ff4b9077;
 }
 
 .link {

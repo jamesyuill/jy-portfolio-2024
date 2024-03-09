@@ -10,3 +10,7 @@
   right: 2rem;
   z-index: 1;
 }
+
+.squareoutline:hover {
+  background-color: #ff4b9077;
+}

@@ -93,14 +93,15 @@
   font-weight: 600;
   font-style: normal;
   font-size: 1.2rem;
-  text-decoration: underline;
-  text-decoration-color: #ff4b91;
+  padding: 0.5rem;
+  width: fit-content;
+  text-decoration: none;
+  background-color: #ff4b9050;
   color: black;
 }
 
 .plink:hover {
   cursor: pointer;
-
   width: fit-content;
   background-color: #ff4b91;
   border-radius: 3px;
