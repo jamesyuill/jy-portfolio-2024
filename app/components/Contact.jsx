@@ -115,7 +115,7 @@ export default function Contact() {
           <button type="submit" className={styles.submit}>
             SUBMIT
           </button>
-          <div className="form-result">{responseObj[response]}</div>
+          <div className={styles.formresult}>{responseObj[response]}</div>
         </form>
       </div>
       {/* <div className="socials-wrapper">

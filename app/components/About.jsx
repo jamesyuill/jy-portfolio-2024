@@ -19,6 +19,8 @@ export default function About() {
         <Image
           src="/images/jy-profile-image.jpg"
           alt="James in the studio messing with synths"
+          placeholder="blur"
+          blurDataURL="/images/jy-profile-image.jpg"
           style={{
             width: '75%',
             height: 'auto',

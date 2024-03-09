@@ -1,3 +1,5 @@
+import styles from './formsuccess.module.css';
+
 export default function FormSuccess() {
-  return <p className="send-success">form sent successfully</p>;
+  return <p className={styles.success}>form sent successfully</p>;
 }
