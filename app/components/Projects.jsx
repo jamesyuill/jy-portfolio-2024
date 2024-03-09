@@ -32,6 +32,12 @@ export default function Projects() {
         endpoint={'etsy-insta-scraper'}
       />
       <ProjectCard
+        title={'React Three/Fiber Portfolio Site'}
+        imgUrl={'old-portfolio-2023-desktop-mobile.png'}
+        disc={'The first version of my portfolio site'}
+        endpoint={'old-portfolio-site'}
+      />
+      <ProjectCard
         title={'JY News'}
         imgUrl={'jy-news-desktop-and-mobile.png'}
         disc={'Northcoders Solo Full Stack Project'}
