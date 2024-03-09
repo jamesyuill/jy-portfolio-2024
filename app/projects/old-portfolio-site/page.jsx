@@ -6,7 +6,14 @@ import { RxArrowLeft } from 'react-icons/rx';
 import FullPageFade from '@/app/components/FullPageFade';
 
 export default function oldPortfolioSite() {
-  const techSkills = ['Javascript', 'React', 'MongoDB', 'Express', 'Node'];
+  const techSkills = [
+    'Javascript',
+    'React Three/Fiber',
+    'Three.js',
+    'Email.js',
+    'GSAP',
+    'gltfjsx',
+  ];
 
   return (
     <main className={styles.main}>
@@ -16,7 +23,7 @@ export default function oldPortfolioSite() {
       <div className={styles.projectcontainer}>
         {/* image div */}
         <div id="project-image-div" className={styles.projectimagediv}>
-          <a href="https://what-carb.netlify.app/" target="_blank">
+          <a href="https://jy-portfolio-2023.netlify.app/" target="_blank">
             <img
               src="/project-images/old-portfolio-2023-desktop-mobile.png"
               className={styles.projectimg}
@@ -28,23 +35,15 @@ export default function oldPortfolioSite() {
         <div id="project-links" className={styles.projectlinks}>
           <a
             className={styles.plink}
-            href="https://github.com/jamesyuill/what-carb-be"
+            href="https://github.com/jamesyuill/jy-portfolio"
             target="_blank"
           >
-            Github (be)
+            Github
           </a>
 
           <a
             className={styles.plink}
-            href="https://github.com/jamesyuill/what-carb-react"
-            target="_blank"
-          >
-            Github (fe)
-          </a>
-
-          <a
-            className={styles.plink}
-            href="https://what-carb.netlify.app/"
+            href="https://jy-portfolio-2023.netlify.app/"
             target="_blank"
           >
             Visit Site
@@ -67,22 +66,26 @@ export default function oldPortfolioSite() {
         </div>
 
         <div id="title-and-description" className={styles.titleanddescription}>
-          <p className={styles.subheading}>A MERN Dish Selector App</p>
+          <p className={styles.subheading}>
+            The first interation of my portfolio site
+          </p>
           <div id="project-info" className={styles.projectinfo}>
             <div id="description">
               <p className={styles.text}>
-                - Here is a reworked version of an old app idea I had.
+                - This was built the week after completing the Northcoders
+                bootcamp.
               </p>
               <p className={styles.text}>
-                - You can get a meal suggestion based on the carbohydrate you
-                would like to eat.
+                - I'd been messing around with Three.js for a while, but had
+                fallen in love with the React way of making reusable components.
+                I came across React Three/Fiber and React Three/Drei and knew
+                that I wanted to make my portfolio using these libraries.
               </p>
               <p className={styles.text}>
-                - I'm using a MongoDB database to store the dishes. A user can
-                view, update, add and delete a dish.
+                - It's a very simple canvas with a React website on top.
               </p>
               <p className={styles.text}>
-                - To learn more about the app visit the github links below.
+                - Feel free to check out the Github and see for yourself!
               </p>
             </div>
           </div>
