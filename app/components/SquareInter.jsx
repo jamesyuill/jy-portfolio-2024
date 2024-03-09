@@ -59,7 +59,7 @@ export default function CircleInter() {
     });
   }, [windowSize]);
 
-  if (window.innerWidth) {
+  if (typeof window !== 'undefined') {
     squareArray = [];
     for (let y = 0; y < windowSize.height; y += 60) {
       for (let x = 0; x < windowSize.width + 20; x += 60) {
