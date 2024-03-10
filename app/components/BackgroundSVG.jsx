@@ -10,8 +10,7 @@ export default function BackgroundSVG() {
   };
   return (
     <div className={styles.backgrounddiv}>
-      {/* {animationLookup[Math.floor(Math.random() * 2)]} */}
-      {animationLookup[0]}
+      {animationLookup[Math.floor(Math.random() * 2)]}
     </div>
   );
 }
