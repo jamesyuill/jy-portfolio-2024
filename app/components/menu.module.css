@@ -9,7 +9,7 @@
   }
 }
 
-@keyframes fadeout {
+@-webkit-keyframes fadeout {
   0% {
     display: flex;
 
@@ -31,7 +31,7 @@
   top: 0;
   left: 0;
   z-index: 2;
-  animation-name: fadeout;
+  -webkit-animation: fadeout;
   animation-duration: 2s;
 }
 
