@@ -10,11 +10,11 @@
 }
 
 @keyframes fadeout {
-  from {
+  0% {
     display: flex;
   }
 
-  to {
+  100% {
     transition: ease-in;
     top: -800px;
     display: none;
@@ -25,7 +25,7 @@
   width: 100vw;
   height: 100vh;
   background-color: rgb(0, 0, 0);
-  display: none;
+  /* display: none; */
   position: absolute;
   top: 0;
   left: 0;
