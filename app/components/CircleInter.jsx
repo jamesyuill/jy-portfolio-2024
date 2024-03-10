@@ -12,7 +12,18 @@ export default function CircleInter() {
 
   let ballArray = [];
   const potentialColors = ['#0802A3', '#FF4B91', '#FF7676', '#FFCD4B'];
-
+  ballArray = [];
+  for (let y = 0; y < windowSize.height; y += 60) {
+    for (let x = 0; x < windowSize.width + 20; x += 60) {
+      let randomChoice = Math.floor(Math.random() * potentialColors.length);
+      let randomColor = potentialColors[randomChoice];
+      ballArray.push({
+        x: x,
+        y: y,
+        color: randomColor,
+      });
+    }
+  }
   useEffect(() => {
     setWindowSize({
       width: window.innerWidth,
@@ -20,20 +31,9 @@ export default function CircleInter() {
     });
   }, []);
 
-  if (typeof window !== 'undefined') {
-    ballArray = [];
-    for (let y = 0; y < windowSize.height; y += 60) {
-      for (let x = 0; x < windowSize.width + 20; x += 60) {
-        let randomChoice = Math.floor(Math.random() * potentialColors.length);
-        let randomColor = potentialColors[randomChoice];
-        ballArray.push({
-          x: x,
-          y: y,
-          color: randomColor,
-        });
-      }
-    }
-  }
+  // if (typeof window !== 'undefined') {
+
+  // }
 
   useGSAP(() => {
     const balls = gsap.utils.toArray('#ball');
