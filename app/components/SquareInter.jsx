@@ -25,7 +25,9 @@ export default function CircleInter() {
 
     squares.forEach((square) => {
       gsap.to(square, {
-        duration: 1,
+        duration: 2,
+        width: 60,
+        height: 60,
         x: gsap.utils.random(-20, 20),
         y: gsap.utils.random(-20, 20),
         ease: 'easeOut',
@@ -68,8 +70,8 @@ export default function CircleInter() {
         squareArray.push({
           x: x,
           y: y,
-          width: 60,
-          height: 60,
+          width: 0,
+          height: 0,
           color: randomColor,
         });
       }

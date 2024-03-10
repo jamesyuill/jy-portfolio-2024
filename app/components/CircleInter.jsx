@@ -40,7 +40,8 @@ export default function CircleInter() {
 
     balls.forEach((ball) => {
       gsap.to(ball, {
-        duration: 1,
+        duration: 2,
+        r: 40,
         x: gsap.utils.random(-20, 20),
         y: gsap.utils.random(-20, 20),
         ease: 'easeOut',
@@ -80,7 +81,7 @@ export default function CircleInter() {
             <circle
               id="ball"
               key={index}
-              r={40}
+              r={0}
               cx={item.x}
               cy={item.y}
               fill={item.color}

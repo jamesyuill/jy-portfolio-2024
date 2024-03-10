@@ -1,21 +1,6 @@
-import CircleInter from './CircleInter';
-import SquareInter from './SquareInter';
 import styles from './hero.module.css';
-import HeroSVG from './HeroSVG';
-
-import dynamic from 'next/dynamic';
-{
-  /* importing this dynamically as the random values cause it to error in the console*/
-}
-
-// const LineCircleSVG = dynamic(() => import('./LineCircleSVG'), { ssr: false });
 
 export default function Hero() {
-  // const animationLookup = {
-  //   0: <CircleInter />,
-  //   1: <SquareInter />,
-  // };
-
   return (
     <div className={styles.wrapper}>
       <div className={styles.heroname}>
