@@ -1,7 +1,6 @@
 @keyframes fadein {
   0% {
     top: -800px;
-    transition: ease-in;
   }
 
   100% {
@@ -9,11 +8,9 @@
   }
 }
 
-@-webkit-keyframes fadeout {
+@keyframes fadeout {
   0% {
-    display: flex;
-
-    transition: ease-in;
+    /* display: flex; */
   }
 
   100% {
@@ -31,8 +28,9 @@
   top: 0;
   left: 0;
   z-index: 2;
-  -webkit-animation: fadeout;
+  animation-name: fadeout;
   animation-duration: 2s;
+  animation-timing-function: ease-in;
 }
 
 .background {
@@ -47,6 +45,7 @@
   z-index: 2;
   animation-name: fadein;
   animation-duration: 1s;
+  animation-timing-function: ease-in;
 }
 
 .navmodal {
