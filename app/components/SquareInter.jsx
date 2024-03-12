@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import styles from './squareinter.module.css';
+gsap.registerPlugin(useGSAP);
 
 export default function CircleInter() {
   const [windowSize, setWindowSize] = useState({
