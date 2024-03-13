@@ -14,7 +14,8 @@ export default function Menu({ isOpen, setIsOpen }) {
         <Link
           className={styles.link}
           href="/"
-          onClick={() => {
+          onClick={(e) => {
+            e.preventDefault();
             setButtonClicked(true);
             setTimeout(() => {
               setIsOpen(false);
@@ -26,7 +27,9 @@ export default function Menu({ isOpen, setIsOpen }) {
         <Link
           className={styles.link}
           href="/about"
-          onClick={() => {
+          onClick={(e) => {
+            e.preventDefault();
+
             setButtonClicked(true);
             setTimeout(() => {
               setIsOpen(false);
@@ -38,7 +41,9 @@ export default function Menu({ isOpen, setIsOpen }) {
         <Link
           className={styles.link}
           href="/skills"
-          onClick={() => {
+          onClick={(e) => {
+            e.preventDefault();
+
             setButtonClicked(true);
             setTimeout(() => {
               setIsOpen(false);
@@ -50,7 +55,9 @@ export default function Menu({ isOpen, setIsOpen }) {
         <Link
           className={styles.link}
           href="/projects"
-          onClick={() => {
+          onClick={(e) => {
+            e.preventDefault();
+
             setButtonClicked(true);
             setTimeout(() => {
               setIsOpen(false);
@@ -62,7 +69,9 @@ export default function Menu({ isOpen, setIsOpen }) {
         <Link
           className={styles.link}
           href="/playground"
-          onClick={() => {
+          onClick={(e) => {
+            e.preventDefault();
+
             setButtonClicked(true);
             setTimeout(() => {
               setIsOpen(false);
@@ -74,7 +83,9 @@ export default function Menu({ isOpen, setIsOpen }) {
         <Link
           className={styles.link}
           href="/contact"
-          onClick={() => {
+          onClick={(e) => {
+            e.preventDefault();
+
             setButtonClicked(true);
             setTimeout(() => {
               setIsOpen(false);
