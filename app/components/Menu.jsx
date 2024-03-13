@@ -17,12 +17,13 @@ export default function Menu({ isOpen, setIsOpen }) {
           className={styles.link}
           onClick={(e) => {
             e.preventDefault();
-
-            setButtonClicked(true);
             push('/');
             setTimeout(() => {
-              setIsOpen(false);
-            }, 1500);
+              setButtonClicked(true);
+              setTimeout(() => {
+                setIsOpen(false);
+              }, 1500);
+            }, 1000);
           }}
         >
           <div className={styles.menubtn}>HOME</div>
@@ -31,12 +32,13 @@ export default function Menu({ isOpen, setIsOpen }) {
           className={styles.link}
           onClick={(e) => {
             e.preventDefault();
-
-            setButtonClicked(true);
             push('/about');
             setTimeout(() => {
-              setIsOpen(false);
-            }, 1500);
+              setButtonClicked(true);
+              setTimeout(() => {
+                setIsOpen(false);
+              }, 1500);
+            }, 1000);
           }}
         >
           <div className={styles.menubtn}>ABOUT</div>
@@ -45,12 +47,14 @@ export default function Menu({ isOpen, setIsOpen }) {
           className={styles.link}
           onClick={(e) => {
             e.preventDefault();
-
-            setButtonClicked(true);
             push('/skills');
+
             setTimeout(() => {
-              setIsOpen(false);
-            }, 1500);
+              setButtonClicked(true);
+              setTimeout(() => {
+                setIsOpen(false);
+              }, 1500);
+            }, 1000);
           }}
         >
           <div className={styles.menubtn}>SKILLS</div>
@@ -59,12 +63,14 @@ export default function Menu({ isOpen, setIsOpen }) {
           className={styles.link}
           onClick={(e) => {
             e.preventDefault();
-
-            setButtonClicked(true);
             push('/projects');
+
             setTimeout(() => {
-              setIsOpen(false);
-            }, 1500);
+              setButtonClicked(true);
+              setTimeout(() => {
+                setIsOpen(false);
+              }, 1500);
+            }, 1000);
           }}
         >
           <div className={styles.menubtn}>PROJECTS</div>
@@ -73,12 +79,14 @@ export default function Menu({ isOpen, setIsOpen }) {
           className={styles.link}
           onClick={(e) => {
             e.preventDefault();
-
-            setButtonClicked(true);
             push('/playground');
+
             setTimeout(() => {
-              setIsOpen(false);
-            }, 1500);
+              setButtonClicked(true);
+              setTimeout(() => {
+                setIsOpen(false);
+              }, 1500);
+            }, 1000);
           }}
         >
           <div className={styles.menubtn}>PLAYGROUND</div>
@@ -87,12 +95,14 @@ export default function Menu({ isOpen, setIsOpen }) {
           className={styles.link}
           onClick={(e) => {
             e.preventDefault();
-
-            setButtonClicked(true);
             push('/contact');
+
             setTimeout(() => {
-              setIsOpen(false);
-            }, 1500);
+              setButtonClicked(true);
+              setTimeout(() => {
+                setIsOpen(false);
+              }, 1500);
+            }, 1000);
           }}
         >
           <div className={styles.menubtn}>CONTACT</div>

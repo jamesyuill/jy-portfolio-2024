@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './about.module.css';
 import Image from 'next/image';
+import profileImage from '../../public/images/jy-profile-image.jpg';
 
 export default function About() {
   return (
@@ -17,10 +18,9 @@ export default function About() {
         </div>
 
         <Image
-          src="/images/jy-profile-image.jpg"
+          src={profileImage}
           alt="James in the studio messing with synths"
           placeholder="blur"
-          blurDataURL="/images/jy-profile-image.jpg"
           style={{
             width: '75%',
             height: 'auto',
