@@ -2,6 +2,7 @@
   0% {
     top: -800px;
     transition: ease-in;
+    display: none;
   }
 
   100% {
@@ -23,23 +24,9 @@
   }
 }
 
-.backgroundfadeout {
+.menuShow {
   width: 100vw;
   height: 100vh;
-  background-color: rgb(0, 0, 0);
-  /* display: none; */
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 2;
-  animation-name: fadeout;
-  animation-duration: 1500ms;
-}
-
-.background {
-  width: 100vw;
-  height: 100vh;
-
   background-color: rgb(0, 0, 0);
   display: flex;
   position: fixed;
@@ -48,6 +35,19 @@
   z-index: 2;
   animation-name: fadein;
   animation-duration: 1s;
+}
+
+.menuHide {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(0, 0, 0);
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  animation-name: fadeout;
+  animation-duration: 2s;
 }
 
 .navmodal {
@@ -109,4 +109,27 @@
 
 .link:hover {
   color: #ff4b91;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.squareoutline {
+  display: flex;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 3px;
+  background-color: white;
+  padding: 1rem;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  z-index: 1;
+}
+
+.squareoutline:hover {
+  background-color: #ff4b90;
 }
