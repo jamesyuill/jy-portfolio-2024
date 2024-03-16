@@ -3,11 +3,19 @@ import styles from './menu.module.css';
 import Link from 'next/link';
 
 import { FaLinkedin, FaInstagram, FaTwitter, FaGithub } from 'react-icons/fa';
+import { IoClose } from 'react-icons/io5';
+import Logo from './Logo';
 
 export default function Menu({ menuOpen, setMenuOpen }) {
   return (
     <div className={menuOpen ? styles.menuShow : styles.menuHide}>
       <div className={styles.navmodal}>
+        <div className={styles.header}>
+          <Logo />
+          <div className={styles.squareoutline}>
+            <IoClose size={30} onClick={() => setMenuOpen(!menuOpen)} />
+          </div>
+        </div>
         <Link href="/" className={styles.link}>
           <div className={styles.menubtn}>HOME</div>
         </Link>

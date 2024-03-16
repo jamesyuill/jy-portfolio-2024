@@ -110,3 +110,26 @@
 .link:hover {
   color: #ff4b91;
 }
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.squareoutline {
+  display: flex;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 3px;
+  background-color: white;
+  padding: 1rem;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  z-index: 1;
+}
+
+.squareoutline:hover {
+  background-color: #ff4b90;
+}
