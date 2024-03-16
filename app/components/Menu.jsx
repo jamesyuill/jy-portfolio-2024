@@ -1,112 +1,31 @@
-'use client';
-import React, { useState } from 'react';
+import React from 'react';
 import styles from './menu.module.css';
 import Link from 'next/link';
-import { useRouter } from 'next/navigation';
 
 import { FaLinkedin, FaInstagram, FaTwitter, FaGithub } from 'react-icons/fa';
 
-export default function Menu({ isOpen, setIsOpen }) {
-  const [btnClicked, setButtonClicked] = useState(false);
-  const { push } = useRouter();
-
+export default function Menu({ menuOpen, setMenuOpen }) {
   return (
-    <div className={btnClicked ? styles.backgroundfadeout : styles.background}>
+    <div className={menuOpen ? styles.menuShow : styles.menuHide}>
       <div className={styles.navmodal}>
-        <a
-          className={styles.link}
-          onClick={(e) => {
-            e.preventDefault();
-            push('/');
-            setTimeout(() => {
-              setButtonClicked(true);
-              setTimeout(() => {
-                setIsOpen(false);
-              }, 1500);
-            }, 1000);
-          }}
-        >
+        <Link href="/" className={styles.link}>
           <div className={styles.menubtn}>HOME</div>
-        </a>
-        <a
-          className={styles.link}
-          onClick={(e) => {
-            e.preventDefault();
-            push('/about');
-            setTimeout(() => {
-              setButtonClicked(true);
-              setTimeout(() => {
-                setIsOpen(false);
-              }, 1500);
-            }, 1000);
-          }}
-        >
+        </Link>
+        <Link href="/about" className={styles.link}>
           <div className={styles.menubtn}>ABOUT</div>
-        </a>
-        <a
-          className={styles.link}
-          onClick={(e) => {
-            e.preventDefault();
-            push('/skills');
-
-            setTimeout(() => {
-              setButtonClicked(true);
-              setTimeout(() => {
-                setIsOpen(false);
-              }, 1500);
-            }, 1000);
-          }}
-        >
+        </Link>
+        <Link href="/skills" className={styles.link}>
           <div className={styles.menubtn}>SKILLS</div>
-        </a>
-        <a
-          className={styles.link}
-          onClick={(e) => {
-            e.preventDefault();
-            push('/projects');
-
-            setTimeout(() => {
-              setButtonClicked(true);
-              setTimeout(() => {
-                setIsOpen(false);
-              }, 1500);
-            }, 1000);
-          }}
-        >
+        </Link>
+        <Link href="/projects" className={styles.link}>
           <div className={styles.menubtn}>PROJECTS</div>
-        </a>
-        <a
-          className={styles.link}
-          onClick={(e) => {
-            e.preventDefault();
-            push('/playground');
-
-            setTimeout(() => {
-              setButtonClicked(true);
-              setTimeout(() => {
-                setIsOpen(false);
-              }, 1500);
-            }, 1000);
-          }}
-        >
+        </Link>
+        <Link href="/playground" className={styles.link}>
           <div className={styles.menubtn}>PLAYGROUND</div>
-        </a>
-        <a
-          className={styles.link}
-          onClick={(e) => {
-            e.preventDefault();
-            push('/contact');
-
-            setTimeout(() => {
-              setButtonClicked(true);
-              setTimeout(() => {
-                setIsOpen(false);
-              }, 1500);
-            }, 1000);
-          }}
-        >
+        </Link>
+        <Link href="/contact" className={styles.link}>
           <div className={styles.menubtn}>CONTACT</div>
-        </a>
+        </Link>
         <div>
           <div className={styles.socials}>
             <a

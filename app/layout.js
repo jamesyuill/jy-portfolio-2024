@@ -1,5 +1,6 @@
 import Header from './components/Header';
 import './globals.css';
+import MenuContext from './context/MenuContext';
 
 export const metadata = {
   title: 'James Yuill | Software Engineer',
@@ -10,8 +11,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <Header />
-        {children}
+        <MenuContext>
+          <Header />
+          {children}
+        </MenuContext>
       </body>
     </html>
   );

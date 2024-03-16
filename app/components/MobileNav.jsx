@@ -1,17 +1,19 @@
 'use client';
-import React, { useState } from 'react';
+import React from 'react';
 import { IoMenu, IoClose } from 'react-icons/io5';
 import Menu from './Menu';
 import styles from './mobilenav.module.css';
+import { useContext } from 'react';
+import { MenuStatus } from '../context/MenuContext';
 
 export default function MobileNav() {
-  const [isOpen, setIsOpen] = useState(false);
+  const { menuOpen, setMenuOpen } = useContext(MenuStatus);
 
   const hamburgerIcon = (
     <IoMenu
       size={30}
       className="hamburger"
-      onClick={() => setIsOpen(!isOpen)}
+      onClick={() => setMenuOpen(!menuOpen)}
     />
   );
 
@@ -19,16 +21,19 @@ export default function MobileNav() {
     <IoClose
       size={30}
       className="hamburger"
-      onClick={() => setIsOpen(!isOpen)}
+      onClick={() => setMenuOpen(!menuOpen)}
     />
   );
 
   return (
     <>
       <div className={styles.squareoutline}>
-        {isOpen ? closeIcon : hamburgerIcon}
+        {menuOpen ? closeIcon : hamburgerIcon}
       </div>
-      <div>{isOpen && <Menu isOpen={isOpen} setIsOpen={setIsOpen} />}</div>
+
+      <div>
+        <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      </div>
     </>
   );
 }
