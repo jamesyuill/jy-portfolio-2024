@@ -8,7 +8,7 @@ import FullPageFade from '@/app/components/FullPageFade';
 export default function projectTodo() {
   const techSkills = [
     'Typescript',
-    'Javascript',
+
     'Next',
     'NextAuth',
     'Mongoose',
