@@ -19,7 +19,7 @@ export default function Skills() {
           </li>
           <li className={styles.li}>
             <img className={styles.img} src="/images/python.png" />
-            PYTHON (currently learning)
+            PYTHON
           </li>
         </ul>
         <div>

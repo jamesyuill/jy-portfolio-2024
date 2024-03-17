@@ -7,6 +7,12 @@ export default function Projects() {
   return (
     <div className={styles.projectscontainer}>
       <ProjectCard
+        title={'Project Todo'}
+        imgUrl={'project-todo-desktop.png'}
+        disc={'A Trello Style App'}
+        endpoint={'project-todo'}
+      />
+      <ProjectCard
         title={'Balls Dropping'}
         imgUrl={'balls-dropping-desktop.png'}
         disc={'An Audio Visual App'}
