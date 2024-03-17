@@ -43,7 +43,7 @@ export default function P5Sketches() {
     },
     {
       img_src: '/p5-images/p5-maurer-rose.png',
-      img_url: 'https://editor.p5js.org/jamesyuill/full/MZwLi3x7NL',
+      img_url: 'https://editor.p5js.org/jamesyuill/full/MZwLi3x7N',
     },
     {
       img_src: '/p5-images/p5-switch-case.png',
