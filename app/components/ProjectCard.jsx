@@ -11,7 +11,7 @@ export default function ProjectCard({ title, imgUrl, disc, endpoint }) {
           <Image
             src={`/project-images/${imgUrl}`}
             width={300}
-            height={250}
+            height={170}
             alt={title}
             placeholder="empty"
             style={{
@@ -22,8 +22,7 @@ export default function ProjectCard({ title, imgUrl, disc, endpoint }) {
           />
         </div>
 
-        {/* <img className={styles.img} src={`project-images/${imgUrl}`} /> */}
-        <div>
+        <div className={styles.textcontainer}>
           <h1 className={styles.h1}>{title}</h1>
           <h2 className={styles.h2}>{disc}</h2>
         </div>
