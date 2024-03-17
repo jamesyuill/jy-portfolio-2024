@@ -7,7 +7,6 @@
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  align-items: flex-start;
   justify-content: flex-start;
   gap: 1rem;
   padding: 0.5rem;
@@ -21,12 +20,17 @@
   background-color: #fa93bb8b;
 }
 
-.img {
-  width: 50%;
-
+/* .img {
+  ;
   object-fit: contain;
   border: 2px solid black;
   border-radius: 3px;
+} */
+
+.imagecontainer {
+  border: 2px solid black;
+  border-radius: 3px;
+  width: 50%;
 }
 
 .h1 {
