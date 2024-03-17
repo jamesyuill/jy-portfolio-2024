@@ -27,7 +27,10 @@ export default function MobileNav() {
 
   return (
     <>
-      <div className={styles.squareoutline}>
+      <div
+        className={styles.squareoutline}
+        onClick={() => setMenuOpen(!menuOpen)}
+      >
         {menuOpen ? closeIcon : hamburgerIcon}
       </div>
 

@@ -12,8 +12,11 @@ export default function Menu({ menuOpen, setMenuOpen }) {
       <div className={styles.navmodal}>
         <div className={styles.header}>
           <Logo />
-          <div className={styles.squareoutline}>
-            <IoClose size={30} onClick={() => setMenuOpen(!menuOpen)} />
+          <div
+            className={styles.squareoutline}
+            onClick={() => setMenuOpen(!menuOpen)}
+          >
+            <IoClose size={30} />
           </div>
         </div>
         <Link href="/" className={styles.link}>

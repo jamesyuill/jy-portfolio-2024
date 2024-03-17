@@ -132,4 +132,5 @@
 
 .squareoutline:hover {
   background-color: #ff4b90;
+  cursor: pointer;
 }
