@@ -15,10 +15,12 @@
 }
 
 .image {
-  width: 5rem;
-
-  padding: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
   background-color: black;
+  border-radius: 3px;
 }
 
 .image:hover {

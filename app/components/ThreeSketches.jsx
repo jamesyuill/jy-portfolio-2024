@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import styles from './threesketches.module.css';
+import Image from 'next/image';
 
 export default function ThreeSketches() {
   const sketches = [
@@ -34,14 +35,23 @@ export default function ThreeSketches() {
       <div id="container" className={styles.container}>
         {sketches.map((item) => {
           return (
-            <Link
-              key={item.name}
-              href={item.img_url}
-              className={styles.threelink}
-            >
-              <img className={styles.image} src={item.img_src} />
-              <p className={styles.name}>{item.name}</p>
-            </Link>
+            <div className={styles.threesketchcontainer}>
+              <Link
+                key={item.name}
+                href={item.img_url}
+                className={styles.threelink}
+              >
+                <Image
+                  src={item.img_src}
+                  width={110}
+                  height={80}
+                  alt={item.img_src}
+                  placeholder="empty"
+                />
+
+                <p className={styles.name}>{item.name}</p>
+              </Link>
+            </div>
           );
         })}
       </div>

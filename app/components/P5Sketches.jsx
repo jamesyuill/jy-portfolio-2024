@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import styles from './p5sketches.module.css';
+import Image from 'next/image';
 
 export default function P5Sketches() {
   const sketches = [
@@ -74,8 +75,18 @@ export default function P5Sketches() {
       <div id="container" className={styles.container}>
         {sketches.map((item) => {
           return (
-            <Link key={item.img_src} href={item.img_url}>
-              <img className={styles.image} src={item.img_src} />
+            <Link
+              key={item.img_src}
+              href={item.img_url}
+              className={styles.image}
+            >
+              <Image
+                src={item.img_src}
+                width={80}
+                height={80}
+                alt={item.img_src}
+                placeholder="empty"
+              />
             </Link>
           );
         })}

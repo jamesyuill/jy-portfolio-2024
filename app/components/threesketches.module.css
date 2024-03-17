@@ -19,16 +19,21 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.294);
+  background-color: rgb(212, 212, 212);
   width: 8rem;
   height: 7rem;
   border-radius: 3px;
   color: black;
-
   text-decoration: none;
 }
 
-.threelink:hover {
+.threesketchcontainer {
+  padding: 2px;
+  background-color: black;
+  border-radius: 3px;
+}
+
+.threesketchcontainer:hover {
   transform: scale(1.1);
 }
 
