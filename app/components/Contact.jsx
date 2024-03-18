@@ -107,6 +107,7 @@ export default function Contact() {
           <textarea
             className={styles.input}
             name="message"
+            maxLength={200}
             rows={4}
             value={formData.message || ''}
             onChange={handleChange}
