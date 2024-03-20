@@ -10,8 +10,8 @@ export default function ProjectCard({ title, imgUrl, disc, endpoint }) {
         <div className={styles.imagecontainer}>
           <Image
             src={`/project-images/${imgUrl}`}
-            width={300}
-            height={170}
+            width={600}
+            height={470}
             alt={title}
             placeholder="empty"
             style={{

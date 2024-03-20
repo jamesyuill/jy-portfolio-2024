@@ -1,10 +1,5 @@
 'use client';
-import {
-  RxGithubLogo,
-  RxInstagramLogo,
-  RxLinkedinLogo,
-  RxTwitterLogo,
-} from 'react-icons/rx';
+
 import emailjs from '@emailjs/browser';
 import { useRef, useState } from 'react';
 import FormSuccess from './FormSuccess';
@@ -119,38 +114,6 @@ export default function Contact() {
           <div className={styles.formresult}>{responseObj[response]}</div>
         </form>
       </div>
-      {/* <div className="socials-wrapper">
-            <div className="socials">
-              <div className="icons">
-                <a
-                  className="icon-link"
-                  href="https://www.linkedin.com/in/jamesyuill/"
-                  target="_blank"
-                >
-                  <RxLinkedinLogo size={40} />
-                </a>
-                <a
-                  className="icon-link"
-                  href="http://www.instagram.com/reanimatedgif"
-                  target="_blank"
-                >
-                  <RxInstagramLogo size={40} />
-                </a>
-                <a
-                  className="icon-link"
-                  href="http://www.twitter.com/jamesyuill"
-                  target="_blank"
-                >
-                  <RxTwitterLogo size={35} />
-                </a>
-                <a
-                  className="icon-link"
-                  href="http://github.com/jamesyuill"
-                  target="_blank"
-                >
-                  <RxGithubLogo size={35} />
-                </a>
-              </div> */}
     </>
   );
 }
