@@ -11,7 +11,7 @@ export default function ProjectCard({ title, imgUrl, disc, endpoint }) {
           <Image
             src={`/project-images/${imgUrl}`}
             width={600}
-            height={470}
+            height={350}
             alt={title}
             placeholder="empty"
             style={{
